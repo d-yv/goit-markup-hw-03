@@ -1,12 +1,13 @@
-ul ol {
+body {
+  font-family: "Roboto" sans-serif;
+  background-color: #fff;
+  color: #2e2f42;
+}
+
+ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
-}
-body {
-  font-family: 'Roboto' sans-serif;
-}
-.header span {
-  color: red;
 }
