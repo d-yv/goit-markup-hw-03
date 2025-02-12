@@ -4,8 +4,30 @@ body {
   color: #434455
 }
 
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 a {
@@ -17,9 +39,19 @@ address {
 }
 
 /* #region header */
-.header {}
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
-.header-nav {}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -36,7 +68,10 @@ address {
   color: #2e2f42;
 }
 
-.header-list {}
+.header-list {
+  display: flex;
+  align-items: center;
+}
 
 .header-item {}
 
@@ -54,6 +89,11 @@ address {
 }
 
 .contacts {}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
 
 .contacts-item {}
 
