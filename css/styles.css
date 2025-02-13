@@ -127,7 +127,7 @@ address {
 .hero {
   background-color: #2e2f42;
   height: 600px;
-  padding: 188px;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -150,8 +150,9 @@ address {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border: none;
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   display: block;
   margin: 0 auto;
@@ -183,12 +184,9 @@ address {
   overflow: hidden;
 }
 
-
 .skills-list {
   display: flex;
   gap: 24px;
-
-  /* flex-basis: calc((100% - 24px) / 4); */
 }
 
 .skills-list-title {
@@ -198,7 +196,7 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-transform: capitalize;
-
+  margin-bottom: 8px;
 }
 
 .skills-list-item {
@@ -211,12 +209,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin: 8px 0 0 0;
 }
-
-/* #endregion skills */
-
-/* #region Our team */
 
 .team {
   background-color: #f4f4fd;
@@ -247,6 +240,10 @@ address {
 
 .team-list-photo {}
 
+.team-list-caption {
+  padding: 32px 0
+}
+
 .team-list-name {
   font-weight: 500;
   font-size: 20px;
@@ -254,7 +251,7 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-list-text {
@@ -264,8 +261,6 @@ address {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
-  margin-top: 8px;
-  margin-bottom: 32px;
 }
 
 /* #endregion Our team */
@@ -289,7 +284,8 @@ address {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .portfolio-list-item {}
@@ -303,6 +299,7 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   /* margin-top: 32px; */
+  margin-bottom: 8px;
 }
 
 .portfolio-list-text {
@@ -311,7 +308,6 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-top: 8px;
   margin-bottom: 32px;
 }
 
@@ -319,8 +315,7 @@ address {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-  padding-top: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
 }
 
 
@@ -341,6 +336,8 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-part {
@@ -354,7 +351,6 @@ address {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-top: 16px;
 }
 
 /* #endregion footer */
