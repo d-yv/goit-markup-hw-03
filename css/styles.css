@@ -22,7 +22,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
@@ -41,11 +42,13 @@ address {
 /* #region header */
 .header {
   border-bottom: 1px solid #e7e9fc;
+
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav {
@@ -61,7 +64,8 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  ;
+  margin-right: 76px;
+  padding: 24px 0;
 }
 
 .heeader-logo-part {
@@ -71,6 +75,7 @@ address {
 .header-list {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .header-item {}
@@ -81,6 +86,8 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0px;
+  display: block;
 }
 
 .header-item-link:hover,
@@ -93,6 +100,7 @@ address {
 .contacts-list {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .contacts-item {}
@@ -103,6 +111,9 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
+  display: block;
+
 }
 
 .contacts-item-link:hover,
@@ -115,7 +126,8 @@ address {
 /* #region hero */
 .hero {
   background-color: #2e2f42;
-  ;
+  height: 600px;
+  padding: 188px;
 }
 
 .hero-title {
@@ -125,9 +137,12 @@ address {
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 .hero-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -135,6 +150,12 @@ address {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
 }
 
 .hero-btn:hover,
@@ -145,11 +166,30 @@ address {
 /* #endregion hero */
 
 /* #region skills */
-.skills {}
+.skills {
+  padding: 120px 0;
+}
 
-.skills-title {}
+.skills-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-.skills-list {}
+
+.skills-list {
+  display: flex;
+  gap: 24px;
+
+  /* flex-basis: calc((100% - 24px) / 4); */
+}
 
 .skills-list-title {
   font-weight: 500;
@@ -157,11 +197,13 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: center;
-  text-transform: capitalize
+  text-transform: capitalize;
+
 }
 
-.skills-list-item {}
+.skills-list-item {
+  max-width: 264px;
+}
 
 .skills-list-text {
   font-weight: 400;
@@ -169,6 +211,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin: 8px 0 0 0;
 }
 
 /* #endregion skills */
@@ -177,7 +220,8 @@ address {
 
 .team {
   background-color: #f4f4fd;
-  ;
+  height: 732px;
+  padding: 120px 0;
 }
 
 .team-title {
@@ -188,12 +232,17 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
-.team-list {}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
 
 .team-list-item {
   background-color: #fff;
+  border-radius: 0 0 4px 4px;
 }
 
 .team-list-photo {}
@@ -204,6 +253,8 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  margin-top: 32px;
 }
 
 .team-list-text {
@@ -212,12 +263,17 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
 
 /* #endregion Our team */
 
 /* #region Our portfolio */
-.portfolio {}
+.portfolio {
+  padding: 120px 0;
+}
 
 .portfolio-title {
   font-weight: 700;
@@ -227,9 +283,14 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
-.portfolio-list {}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
 .portfolio-list-item {}
 
@@ -241,6 +302,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  /* margin-top: 32px; */
 }
 
 .portfolio-list-text {
@@ -249,6 +311,16 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.portfolio-list-caption {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding-top: 32px;
+  padding-left: 16px;
 }
 
 
@@ -257,6 +329,8 @@ address {
 /* #region footer */
 .footer {
   background-color: #2e2f42;
+  height: 312px;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -279,6 +353,8 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
+  margin-top: 16px;
 }
 
 /* #endregion footer */
